@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Returning to app...</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; display: flex; align-items: center;
+           justify-content: center; height: 100vh; margin: 0; background: #f5f5f5; }
+    p { color: #555; font-size: 15px; }
+  </style>
+</head>
+<body>
+  <p>Returning to your app…</p>
+  <script>
+    // iOS should intercept this page as a Universal Link before it even loads.
+    // This JS runs only as a fallback (e.g. direct browser navigation).
+    // The custom URL scheme hands control back to the app via the registered scheme.
+    window.location = 'financialplanningapp://plaid-oauth' + window.location.search;
+  </script>
+</body>
+</html>
