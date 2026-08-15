@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "YOUR_APPLE_TEAM_ID.com.yutingma.financialplanningapp",
+        "appID": "FA792ZH89S.com.yutingma.financialplanningapp",
         "paths": ["/plaid-redirect*"]
       }
     ]
